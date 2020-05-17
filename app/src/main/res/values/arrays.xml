@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="abId">
+        <item>list</item>
+        <item>logo</item>
+        <item>suspension</item>
+        <item>header</item>
+    </string-array>
+
+</resources>

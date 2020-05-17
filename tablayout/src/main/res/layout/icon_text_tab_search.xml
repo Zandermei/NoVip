@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout">
+
+    <ImageView
+        android:id="@+id/tabImageView_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/pad_btn" />
+
+    <TextView
+        android:id="@+id/tabTextView_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/searchs"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

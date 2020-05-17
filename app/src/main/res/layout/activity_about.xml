@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <zd.cn.novipvideo.view.ImageTitleBar
+        android:id="@+id/about_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </zd.cn.novipvideo.view.ImageTitleBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/about_name"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"/>
+
+
+        <TextView
+            android:lineSpacingExtra="@dimen/progress"
+            android:layout_below="@+id/about_name"
+            android:gravity="center_vertical"
+            android:id="@+id/about_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about"/>
+
+        <TextView
+            android:id="@+id/about_mail"
+            android:layout_below="@+id/about_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/faback"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

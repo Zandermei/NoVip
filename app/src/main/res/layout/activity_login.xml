@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/cxsp_bg"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/splash_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/cxsp_logo"
+        />
+
+    <ImageView
+        android:scaleType="fitCenter"
+        android:id="@+id/splash_zt"
+        android:layout_below="@+id/splash_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/cksp_zt"/>
+
+        <EditText
+            android:layout_below="@+id/splash_zt"
+            android:textStyle="bold"
+            android:inputType="text"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:hint="@string/login_ts"
+            android:background="@drawable/login_ed"
+            android:gravity="center"
+            android:id="@+id/login_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:layout_below="@+id/login_ed"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_btn"
+            />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zd.cn.novipvideo.ui.MainActivity">
+    <zd.cn.novipvideo.view.ImageTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </zd.cn.novipvideo.view.ImageTitleBar>
+
+
+    <include layout="@layout/content_main" />
+
+
+</LinearLayout>

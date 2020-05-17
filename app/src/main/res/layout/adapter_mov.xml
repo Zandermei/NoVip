@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:id="@+id/mov_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/mov_left_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/mov_left_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_3"
+                android:id="@+id/mov_left_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_bg_tv"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/color_white"></TextView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/mov_right_line"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:textColor="@color/color_333"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:id="@+id/mov_right_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/mov_right_area"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/color_999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+            <TextView
+                android:lineSpacingExtra="@dimen/dp_2"
+                android:maxLines="3"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_666"
+                android:id="@+id/mov_right_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:background="@drawable/color_progressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/web_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+        <WebView
+            android:id="@+id/web_filechooser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </WebView>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:background="@color/btoom"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:id="@+id/video_js_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
+                android:spinnerMode="dropdown"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/video_js_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_toRightOf="@id/video_js_spinner"
+                android:id="@+id/video_js_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/js_video"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

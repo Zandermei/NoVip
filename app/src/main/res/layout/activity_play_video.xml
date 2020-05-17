@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <VideoView
+            android:layout_centerInParent="true"
+            android:id="@+id/video_plays"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/video_view" />
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:layout_centerInParent="true"
+            android:id="@+id/video_progress"
+            android:layout_width="@dimen/dialog"
+            android:layout_height="@dimen/dialog"
+            app:matProg_barColor="@color/colorAccent"
+            app:matProg_fillRadius="true"
+            app:matProg_progressIndeterminate="true"
+            />
+
+        <RelativeLayout
+            android:background="@color/btoom"
+            android:id="@+id/media_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/top">
+
+            <SeekBar
+                android:thumb="@mipmap/seek_bar_circle"
+                android:background="@drawable/seek_bar_bg"
+                android:id="@+id/seekbar_progress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seek_progress"
+                />
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/left"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/seekbar_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:background="@null"
+                    android:id="@+id/play_pause_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                     />
+
+                <TextView
+                    android:id="@+id/play_tv_current"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/play_pause_btn"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="44:30"/>
+                <TextView
+                    android:textColor="@color/white"
+                    android:id="@+id/play_tv_line"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/play_tv_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "/>
+                <TextView
+                    android:id="@+id/play_tv_totle"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/play_tv_line"
+                    android:text="99:50"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/full_screen"
+                    android:layout_marginRight="@dimen/left"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_vod_fullscreen"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

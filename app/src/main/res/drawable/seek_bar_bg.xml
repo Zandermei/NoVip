@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 一级进度条颜色 -->
+    <item android:id="@android:id/progress">
+        <shape android:shape="line">
+            <corners android:radius="@dimen/progress"></corners>
+            <solid android:color="@color/seek_one"></solid>
+            <stroke android:width="@dimen/seek_progress" android:color="@color/seek_one"></stroke>
+
+        </shape>
+    </item>
+
+    <!-- 二级进度条-->
+
+    <item android:id="@android:id/secondaryProgress">
+        <shape android:shape="line">
+            <corners android:radius="@dimen/progress"></corners>
+            <solid android:color="@color/seek_two"></solid>
+            <stroke android:width="@dimen/seek_progress" android:color="@color/seek_two"></stroke>
+        </shape>
+    </item>
+
+    <item android:id="@android:id/background">
+        <shape android:shape="line">
+            <corners android:radius="@dimen/progress"></corners>
+            <solid android:color="@color/seek_bg"></solid>
+            <stroke android:width="@dimen/seek_progress" android:color="@color/seek_bg"></stroke>
+        </shape>
+    </item>
+</layer-list>

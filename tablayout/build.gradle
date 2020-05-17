@@ -1,0 +1,63 @@
+
+apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+
+ext {
+    bintrayRepo = 'spacetablayout'
+    bintrayName = 'spacetablayout'
+
+    publishedGroupId = 'eu.long1'
+    libraryName = 'SpaceTabLayout'
+    artifact = 'spacetablayout'
+
+    libraryDescription = 'A custom Tab Layout for Android'
+
+    siteUrl = 'https://github.com/thelong1EU/SpaceTabLayout'
+    gitUrl = 'https://github.com/thelong1EU/SpaceTabLayout.git'
+
+    libraryVersion = '1.0.4'
+
+    developerId = 'thelong1eu'
+    developerName = 'Lung Razvan'
+    developerEmail = 'home@long1.eu'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '29.0.0'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    testImplementation 'junit:junit:4.12'
+}
+
+apply from: 'installv1.gradle'
+apply from: 'bintrayv1.gradle'

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="HandheldFriendly" content="true" />
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <script src="js/mui.min.js"></script>
+    <script src="js/video.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/my.style.css" />
+
+    <script type="text/javascript">
+			mui.init()
+		</script>
+</head>
+
+<body class="content-color">
+
+<header class="mui-bar mui-bar-nav" style="background-color: #3D541E;height: 50px;">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: white; margin-top: 5px;"></a>
+    <h1 class="mui-title" style="color: #FFFFFF;margin-top: 5px;font-size: 18px;"></h1>
+</header>
+
+<div class="mui-content content-color">
+    <div id="video" style="width: 100%; height: 260px;text-align: center;"></div>
+</div>
+
+<script type="text/javascript">
+			var player = new TcPlayer('video', {
+				"m3u8": "https://letv.com-t-letv.com/20190709/3240_c18e4bcc/index.m3u8", //请替换成实际可用的播放地址
+				"autoplay": true, //iOS 下 safari 浏览器，以及大部分移动端浏览器是不开放视频自动播放这个能力的
+				"poster": "http://www.test.com/myimage.jpg",
+			//	"width": '480', //视频的显示宽度，请尽量使用视频分辨率宽度
+			//	"height": '320' //视频的显示高度，请尽量使用视频分辨率高度
+			});
+		</script>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#3D541E</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="loading">#B0B0AF</color>
+    <color name="btoom">#454C65</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="toorBar">#3D541E</color>
+    <color name="imgBar">#5c7c31</color>
+    <color name="search">#779450</color>
+    <color name="btom">#799654</color>
+    <color name="splash">#66BBFC</color>
+    <color name="listview">#dbe6cd</color>
+    <color name="listview_login">#E4DFFA</color>
+    <color name="titleBar">#232323</color>
+    <color name="seek_two">#FE6127</color>
+    <color name="seek_one">#f9906a</color>
+    <color name="seek_bg">#61626c</color>
+    <color name="menu">#FAFAFA</color>
+
+
+    <color name="search_colo">#F6F8F9</color>
+    <color name="alivc_white">#e7e7e7</color>
+    <color name="alivc_adv_close_white">#FFFFFF</color>
+    <color name="alivc_base_white">#e7e7e7</color>
+    <color name="alivc_blue">#379DF2</color>
+    <color name="alivc_green">#57AB44</color>
+    <color name="alivc_orange">#EE7C33</color>
+    <color name="alivc_red">#E94033</color>
+    <color name="alivc_white_screen_cost_device_name">#c3c5c6</color>
+
+    <color name="alivc_info_text_duration">#9f9e9e</color>
+    <color name="alivc_dialog_error_bg">#b2000000</color>
+    <color name="alivc_dialog_gesture_bg">#66ffffff</color>
+    <color name="alivc_gesture_text_color">#333333</color>
+    <color name="alivc_shape_background_black">#000000</color>
+    <color name="alivc_shape_background_black_alpha">#cc000000</color>
+    <color name="alivc_background_black_trailer_alpha">#7f000000</color>
+
+    <color name="alivc_color_rate_item">#4c000000</color>
+
+    <color name="alivc_color_player_setting_background">#1e222d</color>
+    <color name="alivc_color_player_tab_selected">#00FFFF</color>
+    <color name="alivc_color_player_tab_defaut">#D8D8D8</color>
+
+    <color name="alivc_color_player_background">#1e222d</color>
+    <color name="alivc_color_player_colorPrimary">#00FFFF</color>
+    <color name="alivc_color_player_colorAccent">#00c1de</color>
+    <color name="alivc_color_player_colorAccent_alpha">#E500c1de</color>
+    <color name="alivc_color_player_clear_logs">#373d41</color>
+    <color name="alivc_color_player_manager_background">#373d41</color>
+    <color name="alivc_color_player_setting">#373d41</color>
+
+
+    <color name="colorPrimary_alpha_five">#1affffff</color>
+    <color name="colorPrimary_alpha_ten">#0cffffff</color>
+    <color name="colorPrimary_alpha_fifteen">#26ffffff</color>
+
+    <color name="add_download_info_background">#373d41</color>
+    <color name="delete_download_info_background">#373d41</color>
+    <color name="alivc_color_player_list_item_press">#2d3342</color>
+
+    <color name="alivc_color_action_list_dialog_background">#1e2321</color>
+    <color name="alivc_color_gray">#D8D8D8</color>
+    <color name="alivc_dialog_bg_translucent">#E6373d41</color>
+    <color name="alivc_barrage_switch_background">#80D8D8D8</color>
+    <color name="more_dialog">#AB373d41</color>
+
+    <color name="splash_tv">#FFFFFF</color>
+    <color name="splash_line">#D7E1EA</color>
+    <color name="splash_bg">#66707D86</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_bcbc">#bcbcbc</color>
+    <color name="color_333">#333333</color>
+    <color name="color_999">#999999</color>
+    <color name="color_666">#666666</color>
+    <color name="color_bg_tv">#2196F3</color>
+
+</resources>

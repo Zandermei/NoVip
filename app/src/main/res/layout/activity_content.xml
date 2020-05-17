@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <zd.cn.novipvideo.view.ImageTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </zd.cn.novipvideo.view.ImageTitleBar>
+
+    <WebView
+        android:layout_below="@+id/title_bar"
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress"
+        android:layout_width="48dp"
+        android:layout_height="48dp">
+    </ProgressBar>
+
+
+    <!-- 网络链接失败显示 -->
+    <LinearLayout
+        android:visibility="gone"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:id="@+id/net_layout"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/net_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ImageView>
+
+        <Button
+            android:background="@drawable/btn_raplay"
+            android:textColor="@color/colorPrimary"
+            android:text="重试"
+            android:id="@+id/net_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

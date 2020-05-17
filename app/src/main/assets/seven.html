@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.min.css" rel="stylesheet" />
+</head>
+
+<body>
+<script src="js/mui.min.js"></script>
+<script type="text/javascript">
+			mui.init()
+		</script>
+
+
+<div class="mui-content">
+
+	<!--<iframe src="https://api.sigujx.com/?url=https://v.qq.com/x/cover/mzc0020025uh2wp/m0032n1s3kr.html" id="iframs" width="100%" height="300px" style="background-color: burlywood;">-->
+
+	<!--</iframe>-->
+
+	<button type="button" class="mui-btn mui-btn-blue">按钮111</button>
+
+	<button type="button" class="mui-btn" id="play">按钮222</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+		   	document.getElementById("play").addEventListener("tap",function(){
+		   		 	document.getElementById('iframs').src = "https://api.sigujx.com/?url=" +"https://v.qq.com/x/cover/mzc0020025uh2wp/m0032n1s3kr.html";
+
+		   	});
+
+
+
+		   </script>
+</body>
+
+</html>

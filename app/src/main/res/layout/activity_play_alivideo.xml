@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listview">
+    <zd.cn.novipvideo.view.ImageTitleBar
+        android:id="@+id/title_ali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </zd.cn.novipvideo.view.ImageTitleBar>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <zd.cn.novipvideo.widget.AliyunVodPlayerView
+          android:id="@+id/alivc_video"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/video_view">
+      </zd.cn.novipvideo.widget.AliyunVodPlayerView>
+
+      <com.pnikosis.materialishprogress.ProgressWheel
+          android:id="@+id/progress"
+          android:layout_centerInParent="true"
+          android:layout_width="@dimen/dialog"
+          android:layout_height="@dimen/dialog"
+          app:matProg_barColor="@color/colorAccent"
+          app:matProg_progressIndeterminate="true"
+          app:matProg_fillRadius="true"/>
+
+  </RelativeLayout>
+    
+
+</LinearLayout>

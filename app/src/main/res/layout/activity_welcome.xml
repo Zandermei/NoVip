@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:id="@+id/fragment_wel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+        <RelativeLayout
+            android:background="@color/toorBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog">
+
+            <ImageView
+                android:id="@+id/small_img"
+                android:layout_marginLeft="@dimen/dialog"
+                android:src="@mipmap/tenxun_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_toRightOf="@+id/small_img"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="蚂蚁视频"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/wel_img"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
