@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'zd'
-            keyPassword '123456'
-            storeFile file('D:/360Downloads/yundunapp/myKey')
-            storePassword '123456'
-        }
-    }
+//    signingConfigs {
+//        config {
+//            keyAlias 'zd'
+//            keyPassword '123456'
+//            storeFile file('D:/360Downloads/yundunapp/myKey')
+//            storePassword '123456'
+//        }
+//    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "zd.cn.novipvideo"
@@ -29,9 +29,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-        debug {
-            signingConfig signingConfigs.config
-        }
+//        debug {
+//            signingConfig signingConfigs.config
+//        }
     }
 }
 

@@ -11,17 +11,25 @@ import java.util.Map;
 
 public class Url {
     public static String[] urlJson = {
-            "https://vip.rkesb.cn/vip/?url=",
-            "http://wm.zuist.com/?url=",
-            "http://api.smq1.com/?url=",
+            "http://jiexi.380k.com/?url=",
+            "http://api.baiyug.vip/index.php?url=",
+            "https://jx40.net/url=",
             "http://yun.360dy.wang/jx.php?url=",
             "https://play.fo97.cn/?url=",
             "https://www.bavei.com/vip/?url=",
             "https://jx.618g.com/?url=",
-            "http://jx.wodym.cn/?url=",
+            "https://z1.m1907.cn/?jx=",
             "http://vip.wandhi.com/?v=",
             "http://jx.618ge.com/?url=",
             };
+
+    //http://jiexi.380k.com/?url
+    // http://api.baiyug.vip/index.php?url
+    // https://jx40.net/url
+
+
+
+
 //http://jx.aeidu.cn/index.php?url=
 // 星座  key 6e2837e9daf6ed49ea3abec71305432a
     public static String[] videoUrl = {"https://3g.v.qq.com/", "https://youku.com/", "https://m.iqiyi.com/",

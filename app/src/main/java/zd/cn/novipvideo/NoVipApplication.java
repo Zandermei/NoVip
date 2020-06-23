@@ -28,12 +28,8 @@ import zd.cn.novipvideo.utils.OkHttpUtils;
  */
 
 public class NoVipApplication extends Application{
-    public static Context mContex;
-    // 请注意，千万要把以下的 APP_ID 替换成您在小米开发者网站上申请的 AppID。否则，可能会影响你的应用广告收益。
-    private static final String APP_ID = "2882303761517411490";
-    // 以下两个没有的话就按照以下传入
-    private static final String APP_KEY = "fake_app_key";
-    private static final String APP_TOKEN = "fake_app_token";
+
+    private static Context mContex;
     @Override
     public void onCreate() {
         super.onCreate();
